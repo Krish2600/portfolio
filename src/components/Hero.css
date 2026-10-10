@@ -63,6 +63,27 @@
   50% { opacity: 0.6; transform: scale(0.8); }
 }
 
+/* Profile Picture */
+.hero__profile {
+  margin-top: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.hero__profile-img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--border);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  transition: transform var(--transition-base), border-color var(--transition-base);
+}
+
+.hero__profile-img:hover {
+  transform: scale(1.05);
+  border-color: var(--accent);
+}
+
 /* Name + Greeting */
 .hero__greeting {
   font-size: 1.1rem;

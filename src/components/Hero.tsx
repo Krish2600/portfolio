@@ -127,6 +127,11 @@ const Hero: React.FC = () => {
             Open to opportunities
           </motion.div>
 
+          {/* Profile Picture */}
+          <motion.div className="hero__profile" variants={itemVariants}>
+            <img src="/profile.jpeg" alt="Krish Sharma" className="hero__profile-img" />
+          </motion.div>
+
           {/* Heading */}
           <motion.div variants={itemVariants}>
             <p className="hero__greeting">Hi, I'm</p>
