@@ -1,0 +1,60 @@
+.tech-stack__header {
+  max-width: 640px;
+  margin-bottom: 3rem;
+}
+
+.tech-stack__groups {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.tech-group__label {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+  margin-bottom: 1rem;
+}
+
+.tech-group__pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.tech-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0.9rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  transition: all var(--transition-fast);
+  cursor: default;
+}
+
+.tech-pill:hover {
+  color: var(--text-primary);
+  border-color: var(--border-hover);
+  background: var(--bg-card-hover);
+  transform: translateY(-1px);
+}
+
+.tech-pill__icon {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+  flex-shrink: 0;
+  filter: brightness(0.9);
+}
+
+.tech-pill:hover .tech-pill__icon {
+  filter: brightness(1);
+}

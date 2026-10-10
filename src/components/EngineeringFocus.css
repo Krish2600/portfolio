@@ -1,0 +1,59 @@
+.eng-focus__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+  margin-top: 2.5rem;
+}
+
+.eng-focus__card {
+  padding: 1.5rem;
+  display: flex;
+  gap: 1rem;
+  cursor: default;
+}
+
+.eng-focus__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  min-width: 40px;
+  background: var(--accent-dim);
+  border-radius: var(--radius-sm);
+  color: var(--accent);
+}
+
+.eng-focus__title {
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 0.4rem;
+  line-height: 1.3;
+}
+
+.eng-focus__desc {
+  font-size: 0.83rem;
+  color: var(--text-secondary);
+  line-height: 1.65;
+}
+
+.eng-focus__related {
+  font-size: 0.75rem;
+  color: var(--accent);
+  margin-top: 0.6rem;
+  font-family: var(--font-mono);
+  opacity: 0.75;
+}
+
+@media (max-width: 1024px) {
+  .eng-focus__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .eng-focus__grid {
+    grid-template-columns: 1fr;
+  }
+}
